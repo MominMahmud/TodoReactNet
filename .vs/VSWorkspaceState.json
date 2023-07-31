@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\todo-reactFrontEnd",
+    "\\todo-reactFrontEnd\\backend",
+    "\\todo-reactFrontEnd\\backend\\Controllers",
+    "\\TodoReactNet"
   ],
   "PreviewInSolutionExplorer": false
 }

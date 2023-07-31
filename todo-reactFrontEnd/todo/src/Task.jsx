@@ -3,31 +3,37 @@ import React, { useState, useEffect } from "react";
 import { Table, Button } from "react-bootstrap";
 import done from "./done.wav";
 import overdue from "./overdue.wav";
+import httpTodo from "./http/http.todo";
 
-function Task({ taskList, setTaskList, doneList, setdoneList, getData }) {
+function Task({
+  taskList,
+  setTaskList,
+  doneList,
+  setdoneList,
+  getData,
+  handleDeleteTask,
+  getPata,
+}) {
   let timer;
   const [remainingTimes, setRemainingTimes] = useState([]);
-  const [searchQuery, setSearchQuery] = useState("");
+
   var isOverdue = false;
   useEffect(() => {
-    getData();
+    getPata();
 
     return () => clearInterval(timer);
   }, []);
-  /*  function handleSearch(event) {
-    setSearchQuery(event.target.value);
-  } */
+
   function playDone() {
     new Audio(done).play();
   }
   function playOver() {
     new Audio(overdue).play();
   }
-  function handleDelete(id) {
+  /* function handleDelete(id) {
     axios
       .delete(`https://localhost:7122/api/TodoItem/${id}`)
       .then((response) => {
-        // Remove the task from the taskList state
         setTaskList((prev) => prev.filter((task) => task.id !== id));
       })
 
@@ -35,13 +41,12 @@ function Task({ taskList, setTaskList, doneList, setdoneList, getData }) {
         console.error("Error deleting task:", error);
       });
   }
-
+ */
   function handleDone(id) {
     const taskToMove = taskList.find((task) => task.id === id);
     setdoneList((prev) => [...prev, taskToMove]);
     const updatedTaskList = taskList.map((task) => {
       if (task.id === id) {
-        // If the task is being marked as done, update the status and variant
         return { ...task, status: "Done" };
       } else {
         return task;
@@ -160,7 +165,7 @@ function Task({ taskList, setTaskList, doneList, setdoneList, getData }) {
                 <td>
                   <Button
                     variant="secondary"
-                    onClick={() => handleDelete(task.id)}
+                    onClick={() => handleDeleteTask(task.id)}
                   >
                     Delete
                   </Button>

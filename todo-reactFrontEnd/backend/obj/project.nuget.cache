@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yPwrZf5fSLeQGl4yTwBSQlNCZJvAQf8uMFVLpfvqfrrTQdAGDnTXZFLkUiXPo5siI3kN2WIo556c7xmHVLbwYQ==",
+  "dgSpecHash": "JUpsny9lIBlEi/tVWyifaamxloYG7z6Qy5b8cumRpV0aRwVzhrfdDnr8HERrIUNJSt4QSoasIJ0dmvdRAafW0A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\WB\\source\\repos\\Todo\\Todo.csproj",
+  "projectFilePath": "C:\\Users\\WB\\practiceProjects\\todo-reactFrontEnd\\backend\\Todo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\WB\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\WB\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

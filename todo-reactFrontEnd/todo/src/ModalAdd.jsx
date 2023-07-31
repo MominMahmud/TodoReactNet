@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ModalAdd.css";
+
 import axios from "axios";
 import moment from "moment/moment";
 import { ToastContainer, toast } from "react-toastify";
@@ -57,6 +58,7 @@ function ModalAdd({ setTaskList, getData }) {
     <>
       <ToastContainer></ToastContainer>
       <button
+        style={{ position: "sticky", bottom: 10 }}
         onClick={toggleModal}
         type="button"
         className="btn btn-success btn-modal"

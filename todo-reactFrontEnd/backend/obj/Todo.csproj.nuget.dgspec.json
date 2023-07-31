@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\WB\\source\\repos\\Todo\\Todo.csproj": {}
+    "C:\\Users\\WB\\practiceProjects\\todo-reactFrontEnd\\backend\\Todo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\WB\\source\\repos\\Todo\\Todo.csproj": {
+    "C:\\Users\\WB\\practiceProjects\\todo-reactFrontEnd\\backend\\Todo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WB\\source\\repos\\Todo\\Todo.csproj",
+        "projectUniqueName": "C:\\Users\\WB\\practiceProjects\\todo-reactFrontEnd\\backend\\Todo.csproj",
         "projectName": "Todo",
-        "projectPath": "C:\\Users\\WB\\source\\repos\\Todo\\Todo.csproj",
+        "projectPath": "C:\\Users\\WB\\practiceProjects\\todo-reactFrontEnd\\backend\\Todo.csproj",
         "packagesPath": "C:\\Users\\WB\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WB\\source\\repos\\Todo\\obj\\",
+        "outputPath": "C:\\Users\\WB\\practiceProjects\\todo-reactFrontEnd\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

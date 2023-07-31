@@ -13,6 +13,9 @@ class HttpTodo {
   findByName = (name) => {
     return ApiHandler.get(`${baseApiUrl}/api/TodoItem/find/${name}`);
   };
+  delete = (id) => {
+    return ApiHandler.delete(`${baseApiUrl}/api/TodoItem`, id);
+  };
 }
 
 const httpTodo = new HttpTodo();
